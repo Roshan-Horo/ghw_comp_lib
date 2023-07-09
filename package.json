@@ -1,0 +1,38 @@
+{
+  "name": "test_component_lib",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "Test Component library build with GHW",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/test_component_lib.umd.cjs",
+  "module": "./dist/test_component_lib.js",
+  "exports": {
+    ".": {
+      "import": "./dist/test_component_lib.js",
+      "require": "./dist/test_component_lib.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean:install": "npm uninstall test_component_lib && rm -rf /node_modules /dist package-lock.json "
+  },
+  "keywords": [],
+  "author": "roshan",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.25",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^4.9.5",
+    "vite": "^4.4.2"
+  }
+}
